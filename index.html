@@ -5,16 +5,17 @@
   <meta charset="UTF-8"> <!-- 文字コードの指定 -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
                         <!-- viewport:スマホ対応, device-width:デバイスの画面幅に合わせる,initial-scale=1:1倍の倍率で表示-->
-  <title>はじめてのWebサイト</title> <!-- タイトルだな -->
-  <style>
-    :root {
-      --max:  820px; --gap: 1rem;
+  <title>はじめてのWebサイト</title> <!-- タイトル:中身ではなく外部のタイトル -->
+  <style> /* CSSを直接書けるのだとか。外部からもできるけど直接のが変数とかの優先度が高い*/
+    :root { /*主に変数を置くところ*/
+      --max:  820px; --gap: 1rem; /* 820ピクセル  1remはルートのフォントサイズを基準にした値*/
     }
     body {
       margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.7; 
     }
     header, main, footer {
       margin: 0 auto; max-width: var(--max); padding: calc(var(--gap) * 1.2);
+      /* margin: 0 auto 中央よせ */
     }
     header{
       border-bottom: 1px solid #eee;
