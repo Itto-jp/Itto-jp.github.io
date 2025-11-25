@@ -1,16 +1,17 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
+<!-- HTMLの仕組みや構造について知るためにコメントで役割をたくさんメモしてます。ご了承ください。 -->
+<!DOCTYPE html>         <!-- HTML5を使う宣言-->
+<html lang="ja">         <!-- このページは日本語(ja)だと指定  -->
+<head>                   <!-- headは表示されないが、検索エンジンが読むもの -->
+  <meta charset="UTF-8"> <!-- 文字コードの指定 -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>はじめてのWebサイト</title>
+                        <!-- viewport:スマホ対応, device-width:デバイスの画面幅に合わせる,initial-scale=1:1倍の倍率で表示-->
+  <title>はじめてのWebサイト</title> <!-- タイトルだな -->
   <style>
     :root {
       --max:  820px; --gap: 1rem;
     }
     body {
-      margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-       line-height: 1.7; 
+      margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.7; 
     }
     header, main, footer {
       margin: 0 auto; max-width: var(--max); padding: calc(var(--gap) * 1.2);
