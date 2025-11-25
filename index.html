@@ -12,10 +12,14 @@
     }
     body {
       margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.7; 
+      /* margin: 0[外側の余白を0に] 
+        font-famiry: system-ui [フォントは何にするか: 環境に合わせた標準フォント,(system-uiが使えなかったら) apple用,Windows用,汎用フォント]
+        line-height: 1.7[行間を指定]
+      */
     }
     header, main, footer {
       margin: 0 auto; max-width: var(--max); padding: calc(var(--gap) * 1.2);
-      /* margin: 0 auto 中央よせ */
+      /* margin: 0 auto [中央よせ] , max-width: var(変数) [最大幅=var(変数=数値)] ,padding[枠線と中身の間のスペース幅]   */
     }
     header{
       border-bottom: 1px solid #eee;
