@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "viewport" content = "width=devise-width, initial-scale=1.0">
+	<title>CSSの学習ログ</title>
+
+	<style>
+		
+		
+		.border{
+			border: 2px solid #FF0000;
+			border-width: thin thick thick thin;
+		}
+
+		.btn{
+			padding: 12px 28px;
+			border: none;
+			border-radius: 8px;
+			cursor: pointer;
+
+			background-color: #007bff; /*青*/
+			color: white;
+			font-size: 16px;
+			font-weight: bold;
+			box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+			transition: all 0.3s;
+
+		}
+
+		.btn:hover{
+			background-color: #0056b3;
+			box-shadow: 0 6px rgba(0,0,0,0.15);
+			transform: translateY(-2px);
+
+
+		}
+	</style>
+
+</head>
+
+<body>
+	<header>
+		<h1>CSSの学習</h1>
+		<nav>
+			<ul>
+				<li><a href="#btn">ボタン</a></li>
+				<li><a href="#card">カード</a></li>
+				<li><a href="#flex">フレックス</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+<div class>
+		<article id="btn">
+			<h2>影の付いたボタン</h2>
+			<button class="btn">ボタン</button>
+
+<pre class="border">
+	<code>
+&lt;style&gt;
+	.btn{
+		padding: 12px 28px;	/*余白 横　縦*/
+		border: none;		/*枠線　なし*/
+		border-radius: 8px;	/*丸角*/
+		cursor: pointer;	/*カーソルをポインターに*/
+
+		background-color: #007bff; /*背景　青*/
+		color: white;			/*文字　白*/
+		font-size: 16px;		/*フォントサイズ*/
+		font-weight: bold;		/*太字*/
+		box-shadow: 0 4px 6px rgba(0,0,0,0.1);	/*四角い影 横　縦　大きさ　色*/
+
+		transition: all 0.3s;			/*動きの速さ*/
+
+	}
+
+	.btn:hover{					/*カーソルが重なった時*/
+		background-color: #0056b3;		/*背景 暗い青*/
+		box-shadow: 0 6px rgba(0,0,0,0.15);	/*影*/
+		transform: translateY(-2px);		/*上に移動*/
+
+
+	}
+&lt;style&gt;
+
+&lt;button class=&quot;btn&quot;&gt;ボタン&lt;/button&gt;
+
+	</code>
+</pre>
+
+</div>
+
+		</article>
+		<article id="card">
+		</article>
+		<article id="flex">
+		</article>
+	</main>
+
+	<footer>
+		<p>&copy; 2025 Itto-jpのWebサイト
+	</footer>
+
+</body>
+
+</html>
