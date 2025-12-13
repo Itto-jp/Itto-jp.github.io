@@ -8,29 +8,36 @@
                         <!-- viewport:スマホ対応, device-width:デバイスの画面幅に合わせる,initial-scale=1:1倍の倍率で表示-->
   <title>Itto-jpのWebサイト</title>
   <style> /* CSSを直接書ける。外部からもできるけど直接のが変数とかの優先度が高い*/
+    
     :root { /*主に変数を置くところ*/
       --max:  820px; --gap: 1rem; /* 1remはルートのフォントサイズを基準にした値*/
     }
+
+    
     body {
       margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.7; 
       
     }
-    main{
-      margin: 0 auto; max-width: var(--max); padding: calc(var(--gap) * 1.2);
-      
-    }
 
-    img.icon{
-      margin: 10%;
-      width: auto;
-      height: 80%;
-    }
     header{
       display: flex;
       border-bottom: 1px solid #eee;
       background: #DCECFB;
       width: 100%;
       height: 100px;
+    }
+   
+
+    img.icon{
+      margin: 10%;
+      width: auto;
+      height: 80%;
+    }
+    
+
+     main{
+      margin: 0 auto; max-width: var(--max); padding: calc(var(--gap) * 1.2);
+      
     }
     nav a{
       margin-right: 1rem; color: #0366d6; text-decoration: none;
